@@ -1,0 +1,35 @@
+html {
+    font-family: verdana;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+a {
+    color: aquamarine !important;
+    font-size: 16px;
+}
+
+p {
+    color: grey;
+    font-size: 21px;
+}
+
+#camp {
+    margin-bottom: 2.5%;
+}
+
+#copyright {
+    text-align: right;
+}
+

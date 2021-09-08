@@ -5,22 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='style.css'>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400&display=swap" rel="stylesheet"> 
+    <title>CSS Stylesheet</title>
 </head>
 
-<header>
-    <nav>
-        <ul>
-            <li>Fonts</li>
-            <li>Colors</li>
-            <li>Styles</li>
-            <li>Resources</li>
-        </ul>
-    </nav>
-
-    <h1>Style Guide for CSS and HTML websites</h1>
-</header>
 <body>
+
+    <header>
+        <section>
+            <h3><a href="https://quovital.tech/" target="_blank" id="cc">Home</a></h3>
+        </section>
+        <nav>
+            <ul>
+                <li><h2><a href="#Fonts">Fonts</a></h2></li>
+                <li><h2><a href="#Colors">Colors</a></h2></li>
+                <li><h2><a href="#Styles">Styles</a></h2></li>
+                <li><h2><a href="#lastcaption">Dog</a></h2></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <h1 class="title" id="Fonts">Style Guide for CSS and HTML websites</h1>
+
+    <section class="theme">
+        <h2 class="subtitle">Fonts</h2>
+
+        <p>
+            Fonts for websites can be provided by the computer that renders the website itself,
+            by the browser that you're using or by an external resource, such as 
+            <a href="https://fonts.google.com/" target="_blank">Google Fonts.</a>
+        </p>
+
+        <p>
+            The most common fonts for web safe use can be found 
+            <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">here.</a> 
+            However, the recommended fonts for working on minimalistic and elegant websites at
+            the moment are those of the <a href="https://fonts.google.com/?category=Sans+Serif"
+            target="_blank">
+         Sans Serif</a> family.
+        </p>
+
+        <p>
+            This is due to the fact that sans-serif fonts lack the touches and finishes at the
+            end of each letter that sans has, thus giving it a more elegant look.
+        </p>
+
+        <figure>
+            <img src="resources/images/serif-vs-sansserif.png" 
+            alt="Figure showing diferences between sans and sans-serif">
+            <figcaption id="Colors">Note the differences at the ends of each letter.</figcaption>
+        </figure>
+
+    </section>
+
+    <section class="theme">
+        <h2 class="subtitle">Colors</h2>
+        
+        <p>
+            When thinking about color, the most important thing should be visual appeal 
+            and readability of the website. No one is gonna visit a pretty website that's
+            impossible to read.
+        </p>
+
+        <p>
+            A great tool for choosing color pallets can be found at 
+            <a href="https://coolors.co/" target="_blank">Coolors.</a>
+        </p>
+
+        <figure>
+            <img src="resources/images/color-palette.png" alt="Example of a color palette.">
+            <figcaption id="Styles">For example, this is the color palette that my first paying
+                client ever sent me. She's also my aunt, but that's neither here nor there.
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <section class="theme">
+        <h2 class="subtitle">Styles</h2>
+
+        <p>
+            This section is pretty much a filler by this point, 
+            but nevertheless, it's important to remember.
+        </p>
+
+        <p>
+            There are many styles applicable to html and css websites. However, one should
+            always remember to use the box model and the flow of html code in order to modify
+            it. 
+        </p>
+
+        <p>
+            Using headings h1 to h6 in order to determine the order of importance for elements
+            within a page is crucial not only for SEO purposes, but also for how you write your
+            css code later on. You're gonna have a much better time when you can write css rules
+            applicable to headings in the order that you want them, instead of relying on classes
+            and identifiers for every single rule. 
+        </p>
+
+        <p>
+            Lastly, here's a caption of the box model so future Luis can actually remember how
+            it works.
+        </p>
+
+        <figure>
+            <img src="resources/images/box_model.png" alt="A figure showing the box model.">
+            <figcaption id="lastcaption">Always remember that using the box-sizing: content-box rule in 
+                css will reset all box sizes <br> to what you set as height and width, so no more
+                armchair arithmetics.</figcaption>
+        </figure>
+
+    </section class="theme">
+
+    <section class="theme" id="lastone">
+        <h2 class="subtitle">Dog</h2>
+
+        <p>I got tired of writing, so here's a picture of my dog, Jamila. 
+            Nevermind her tag, it's provisional</p>
+
+        <figure>
+            <img src="resources/images/jamila.jpg" alt="A pretty dog.">
+            <figcaption>Such a good girl.</figcaption>
+        </figure>
+    </section>
+
+    <footer class="footer">
+        <p id="lasttext">So that's pretty much it for my guide at the moment. 
+            One day I will make it good for the people, but today is not that day.</p>
+    </footer>
     
 </body>
 </html>
+
+<!--
+  _______________________________
+ /\             CC               \
+/++\    __________________________\
+\+++\   \ ************************/
+ \+++\   \___________________ ***/
+  \+++\   \             /+++/***/
+   \+++\   \           /+++/***/
+    \+++\   \         /+++/***/
+     \+++\   \       /+++/***/
+      \+++\   \     /+++/***/
+       \+++\   \   /+++/***/
+        \+++\   \ /+++/***/
+         \+++\   /+++/***/
+          \+++\ /+++/***/
+           \+++++++/***/
+            \+++++/***/
+             \+++/***/
+              \+/___/  
+-->

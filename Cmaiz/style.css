@@ -1,0 +1,181 @@
+* {
+    box-sizing: content-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(241, 218, 12);
+    overflow: hidden;
+    box-shadow: 3px 1px 15px #128807a6;
+}
+
+#logo {
+    position: absolute;
+    z-index: 15;
+    display: inline-block;
+    left: 20px;
+    top: 0px;
+    bottom: 5px;
+    width: 125px;
+    height: 70px;
+}
+
+#logo2 {
+    position: absolute;
+    z-index: 15;
+    display: inline-block;
+    right: 30px;
+    top: 0px;
+    bottom: 5px;
+    width: 285px;
+    height: 170px;
+}
+
+.titles {
+    align-content: center;
+    width: 100%;
+    height: 700px;
+    width: 100%;
+}
+
+#mega-logo {
+    position: relative;
+    height: 400px;
+    width: 700px;
+    top: 50px;
+    display: block;
+    margin: 0% auto;
+}
+
+.navbar {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
+.navbutton {
+    display: inline-block;
+    width: 175px;
+    margin-top: 0;
+    font-size: 100%;
+    padding-top: 20px;
+}
+
+#main-title {
+    position: absolute;
+    top: 425px;
+    text-align: center;
+    width: 100%;
+    margin: 0% auto;
+}
+
+p {
+    position: relative;
+    top: 100px;
+    margin: 0 30%;
+    font-size: 120%;
+    line-height: 150%;
+}
+
+.content-box {
+    position: relative;
+    display: block;
+    top: -50px;
+    width: 40%;
+    height: 800px;
+    margin: 60px auto;
+    /* border: 1px solid black; */
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(241, 218, 12);
+    bottom: 0;
+    box-shadow: -3px -1px 15px #128807a6;
+    position: fixed;
+    height: 13%;
+    overflow: hidden;
+    margin-bottom: auto;
+}
+
+#bottom-bar {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+.bottom-section {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    border-right: 2px solid rgba(0, 0, 0, 0.37);
+    padding-right: 50px;
+}
+
+#copyright {
+    position: absolute;
+    top: 80%;
+    right: 20px;
+    margin-bottom: 50px;
+    border: none;
+}
+
+#nuestros-productos {
+    margin-bottom: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content-img {
+    position: relative;
+    border-radius: 25px;
+    height: 450px;
+    width: 550px;
+    margin-top: -30px;
+    bottom: 60px;
+}
+
+.content-text {
+    position: relative;
+    top: 550px;
+    text-align: center;
+    margin: 0 100px;
+}
+#conviertete {
+    margin-top: -15px;
+}
+
+.content-img:hover {
+    box-shadow: 3px 3px 10px lightgrey;
+    opacity: 0.9;
+    /* bottom: 45px;
+    right: 5px; */
+}
+
+
+
+
+

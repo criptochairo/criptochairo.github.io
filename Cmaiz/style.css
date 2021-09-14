@@ -227,7 +227,8 @@ a:hover {
     }
 
     #mega-logo {
-        width: 14em;
+        max-width: 20em;
+        width: 20em;
         height: auto;
     }
 

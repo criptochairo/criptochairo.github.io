@@ -191,6 +191,8 @@ a:hover {
     }
     .navbar {
         float: none;
+        width: 100%;
+        padding: 0;
     }
     .titles {
         width: 100%;
@@ -260,8 +262,11 @@ a:hover {
     #copyright {
         display: block;
         position: relative;
-        margin: 0 auto;
+        text-align: right;
         max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     #bottom-bar {

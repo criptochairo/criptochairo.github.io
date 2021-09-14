@@ -1,6 +1,6 @@
 * {
     box-sizing: content-box;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -16,127 +16,157 @@ body {
 header {
     position: fixed;
     top: 0;
+    padding-top: 1.25rem;
     z-index: 10;
     width: 100%;
-    height: 70px;
-    background-color: rgb(241, 218, 12);
+    height: 6%;
+    background-color: #F8C845;
     overflow: hidden;
-    box-shadow: 3px 1px 15px #128807a6;
+    box-shadow: 3px 1px 15px #437810;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 #logo {
     position: absolute;
     z-index: 15;
-    display: inline-block;
-    left: 20px;
-    top: 0px;
-    bottom: 5px;
-    width: 125px;
-    height: 70px;
+    display: block;
+    left: 2em;
+    top: 1%;
+    height: 7%;
+    width: 7%;
+    bottom: .75em;
+    height: auto;
 }
 
 #logo2 {
     position: absolute;
     z-index: 15;
-    display: inline-block;
-    right: 30px;
-    top: 0px;
-    bottom: 5px;
-    width: 285px;
-    height: 170px;
+    display: block;
+    right: 1em;
+    top: 0%;
+    bottom: 1.25em;
+    width: 11.5em;
+    max-width: 10%;
+    height: auto;
 }
 
 .titles {
     align-content: center;
     width: 100%;
-    height: 700px;
-    width: 100%;
+    height: 42rem;
 }
 
 #mega-logo {
     position: relative;
-    height: 400px;
-    width: 700px;
-    top: 50px;
+    width: 35%;
+    height: auto;
+    top: 1.25em;
     display: block;
     margin: 0% auto;
+    max-width: 40%;
 }
 
 .navbar {
     position: relative;
     float: right;
     margin-right: 10px;
+    bottom: 1em;
 }
 
 .navbutton {
     display: inline-block;
-    width: 175px;
-    margin-top: 0;
-    font-size: 100%;
-    padding-top: 20px;
+    width: 10.5em;
+    height: auto;
+    padding: 1% 0;
+    font-size: 1.1em;
+    max-width: 17%;
+    max-height: 7%;
 }
 
 #main-title {
-    position: absolute;
-    top: 425px;
+    position: relative;
     text-align: center;
     width: 100%;
-    margin: 0% auto;
+    font-size: 200%;
 }
 
 p {
     position: relative;
-    top: 100px;
-    margin: 0 30%;
+    top: 1em;
+    margin: 0 25%;
+    text-align: justify;
     font-size: 120%;
-    line-height: 150%;
+    line-height: 160%;
 }
 
 .content-box {
     position: relative;
     display: block;
-    top: -50px;
     width: 40%;
-    height: 800px;
-    margin: 60px auto;
-    /* border: 1px solid black; */
+    height: 55em;
+    margin: 2em auto;
+    overflow: visible;
+}
+
+.content-img {
+    position: relative;
+    border-radius: 25px;
+    width: 80%;
+    height: auto;
+    max-width: 80%;
+    top: 1em;
+}
+
+.content-text {
+    position: relative;
+    text-align: center;
+    margin: 1em 2em;
+}
+
+#conviertete {
+    bottom: 6em;
 }
 
 .footer {
     width: 100%;
-    background-color: rgb(241, 218, 12);
+    background-color: #F8C845;
     bottom: 0;
-    box-shadow: -3px -1px 15px #128807a6;
-    position: fixed;
-    height: 13%;
+    box-shadow: -3px -1px 15px #437810;
+    position: relative;
+    height: 12rem;
     overflow: hidden;
-    margin-bottom: auto;
 }
 
 #bottom-bar {
-    position: absolute;
-    left: 50px;
-    top: 10px;
+    position: relative;
+    float: left;
+    left: 1.5em;
+    top: 1em;
+    max-width: 100%;
 }
 
 .bottom-section {
     position: relative;
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 1.5em;
     border-right: 2px solid rgba(0, 0, 0, 0.37);
-    padding-right: 50px;
+    padding-right: 1.5em;
 }
 
 #copyright {
-    position: absolute;
+    position: relative;
+    float: right;
     top: 80%;
-    right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 1em;
+    max-width: 8%;
     border: none;
 }
 
 #nuestros-productos {
-    margin-bottom: 250px;
+    margin-bottom: 2em;
 }
 
 a {
@@ -149,30 +179,9 @@ a:hover {
     text-decoration: underline;
 }
 
-.content-img {
-    position: relative;
-    border-radius: 25px;
-    height: 450px;
-    width: 550px;
-    margin-top: -30px;
-    bottom: 60px;
-}
-
-.content-text {
-    position: relative;
-    top: 550px;
-    text-align: center;
-    margin: 0 100px;
-}
-#conviertete {
-    margin-top: -15px;
-}
-
 .content-img:hover {
     box-shadow: 3px 3px 10px lightgrey;
     opacity: 0.9;
-    /* bottom: 45px;
-    right: 5px; */
 }
 
 

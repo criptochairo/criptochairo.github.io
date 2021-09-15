@@ -9,7 +9,7 @@ body {
     background-color: white;
     height: 100%;
     opacity: 0;
-    transition: opacity 4s;
+    transition: opacity 2s;
 }
 
 
@@ -203,6 +203,7 @@ a:hover {
     .titles p {
         width: 80%;
         margin: 0 auto;
+        padding-bottom: 30%;
     }
     .bottom-section {
         margin-right: .75em;
@@ -213,6 +214,11 @@ a:hover {
     }
     #logo2{
         display: none;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 10em;
     }
 }
 
@@ -273,6 +279,10 @@ a:hover {
 
     #bottom-bar {
         float: none;
+    }
+
+    footer {
+        position: relative;
     }
 }
 

@@ -26,7 +26,11 @@ header {
     background: rgb(190, 199, 251);
     background: linear-gradient(45deg, rgba(204, 220, 236, 0.726) 0%, rgba(169,222,249,1) 47%, rgba(228, 193, 249, 0.52) 70%);
     box-shadow: 3px 1px 10px lightgray;
-    padding: .75em 0;
+    padding: .55em 0;
+}
+
+h4 {
+  margin-top: 0.35em;
 }
 
 #menu {

@@ -59,7 +59,7 @@ h4 {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
-  background-image: url('resources/logo2.png');
+  background-image: url('resources/menu2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,7 +67,9 @@ h4 {
   width: 3.5em;
   height: 3.5em;
   padding: 0.5em;
-  border: none;
+  border: 0px solid black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px grey;
 }
 
 .dropdown-menu {
@@ -83,6 +85,15 @@ h4 {
   transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
   transform: translateX(200px);
   pointer-events: none;
+}
+
+#close {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  top: 1em;
+  right: 1em;
+  opacity: 0.8;
 }
 
 ul li {
@@ -264,8 +275,8 @@ input[type=submit] {
     .dropdown {
       top: 1.5em;
       right: 1.5em;
-      width: 2em;
-      height: 2em;
+      width: 2.5em;
+      height: 2.5em;
   }
 
     form {
@@ -275,15 +286,16 @@ input[type=submit] {
     .dropdown-menu {
       width: 90%;
       background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%);
-      line-height: 1.5em;
+      line-height: 1.25em;
       border-radius: 15px;
     }
 
     .dropdown-menu ul li {
       text-align: center;
-      font-size: 180%;
+      font-size: 150%;
     }
 }
+
 
 @media only screen and (max-width: 320px) {
     .content-button {
@@ -296,8 +308,8 @@ input[type=submit] {
     .dropdown {
         top: 1.5em;
         right: 1.5em;
-        width: 1.5em;
-        height: 1.5em;
+        width: 2em;
+        height: 2em;
     }
 
     h4{

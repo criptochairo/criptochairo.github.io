@@ -14,7 +14,7 @@ body {
 .particle {
 	position: absolute;
  	border-radius: 50%;
-    z-index: 15;
+  z-index: 15;
 }
 
 header {
@@ -34,7 +34,7 @@ h4 {
 }
 
 #menu {
-    position: absolute;
+    position: relative;
     z-index: 15;
     width: 3.5em;
     max-width: 4.5em;
@@ -54,6 +54,74 @@ h4 {
     height: auto;
     border-radius: 50%;
 }
+
+.dropdown {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  background-image: url('resources/logo2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0);
+  width: 3.5em;
+  height: 3.5em;
+  padding: 0.5em;
+  border: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+  line-height: 1.5em;
+  background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgb(255, 193, 222) 47%, rgba(208,244,222,0.75) 70%);
+  box-shadow: 2px 2px 15px lightgray;
+  border-radius: 15px 0px 15px 15px;
+  padding: .5em;
+  opacity: 0;
+  transition: opacity 350ms ease-in-out, transform 350ms ease-in-out;
+  transform: translateX(200px);
+  pointer-events: none;
+}
+
+ul li {
+  display: block;
+  margin: 1em;
+  font-size: 160%;
+  text-align: left;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+} 
+
+ul li a:focus {
+  pointer-events: all;
+}
+
+button:focus + .dropdown-menu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+}
+
+button:focus {
+  opacity: 0;
+}
+
+
 
 .main-title {
     margin-top: 1em;
@@ -133,6 +201,12 @@ input[type=submit] {
     font-size: 70%;
 }
 
+
+#credit a:visited {
+  text-decoration: underline;
+  color: blue;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 1600px) {
@@ -149,14 +223,33 @@ input[type=submit] {
     h4 {
         font-size: 120%;
     }
-    #menu {
-        width: 3em;
+    
+
+    .dropdown-menu {
+      padding-left: 0;
     }
 }
 
 @media only screen and (max-width: 940px) {
     .content-button {
         margin: 5.5em 28%;
+        z-index: 9;
+    }
+
+    .dropdown-menu ul li {
+      font-size: 150%;
+    }
+
+    .dropdown-menu {
+      padding: 0;
+      background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,0.75) 70%);
+      line-height: 1.75em;
+      z-index: 10;
+      box-shadow: 2px 2px 15px #888888;
+    }
+
+    #logo {
+      z-index: 9;
     }
 }
 
@@ -167,11 +260,28 @@ input[type=submit] {
     .main-title {
         font-size: 225%;
     }
-    #menu {
-        width: 2.5em;
-    }
+    
+    .dropdown {
+      top: 1.5em;
+      right: 1.5em;
+      width: 2em;
+      height: 2em;
+  }
+
     form {
         padding: 0 1em;
+    }
+
+    .dropdown-menu {
+      width: 90%;
+      background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%);
+      line-height: 1.5em;
+      border-radius: 15px;
+    }
+
+    .dropdown-menu ul li {
+      text-align: center;
+      font-size: 180%;
     }
 }
 
@@ -183,13 +293,27 @@ input[type=submit] {
         font-size: 180%;
         margin-bottom: .25em;
     }
-    #menu {
-        top: 1em;
-        right: 1em;
-        width: 2em;
+    .dropdown {
+        top: 1.5em;
+        right: 1.5em;
+        width: 1.5em;
+        height: 1.5em;
     }
+
     h4{
         margin-top: 0;
+    }
+    
+    .dropdown-menu {
+      width: 85%;
+      background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%);
+      line-height: 1.10em;
+      border-radius: 15px;
+    }
+
+    .dropdown-menu ul li {
+      text-align: center;
+      font-size: 130%;
     }
 }
 

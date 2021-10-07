@@ -95,12 +95,22 @@
 
 
     <section>
+        <!-- To create an overlay for the content buttons, the order is first you create a div for the
+        whole button and put the background image there, then a div for the  -->
 
         <div class="content-button">
-            <figure>
-                <img src="resources/working-mother.png" alt='working-mother' class='content-img'  id='mother'>
-            </figure>
-            <h2>About me</h2>
+            <div class="overlay">
+                <figure>
+                    <img src="resources/working-mother.png" alt='working-mother' class='content-img'  id='mother'>
+                </figure>
+                <h2>About me</h2>
+            </div>
+        </div>
+
+        <div class="content-text">
+            <p>Hi! My name is Lucía, I live in the US with my beautiful family and I work part 
+                time as a dog walker. Welcome to my blog, where you'll be able to read all of my articles
+            and even buy some of my photographs. </p>
         </div>
         
         <div class="content-button">
@@ -109,6 +119,7 @@
             </figure>
             <h2>Blog</h2>
         </div>
+
 
         <div class="content-button">
             <figure>

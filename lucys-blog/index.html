@@ -58,10 +58,9 @@
     </div>
 
     <header>
-
+    <div class="head-overlay">
         <div defer>
-            <button class='dropdown'>
-            </button>
+            <button class='dropdown'></button>
             <div class="dropdown-menu">
                 <ul>
                     <li><a href="">Home</a></li>
@@ -80,23 +79,24 @@
                 <img src="resources/close.png" alt="close signal" id='close'>
             </div>
         </div>
-
+    
         
 
         <figure>
-            <!-- <a href=''></a> -->
             <img src="resources/logo2.jpeg" alt='Logo provisional' id='logo'>
         </figure>
         
         <h1 class="main-title"><strong>What if I Say Yes?</strong></h1>
         <h4><small>by Lucía Cárdenas</small></h4>
 
+    </div>
     </header>
 
 
     <section>
         <!-- To create an overlay for the content buttons, the order is first you create a div for the
-        whole button and put the background image there, then a div for the  -->
+        whole button and put the background image there, then a div for the overlay, which includes text,
+        logos and other images -->
 
         <div class="content-button">
             <div class="overlay">
@@ -108,31 +108,38 @@
         </div>
 
         <div class="content-text">
-            <p>Hi! My name is Lucía, I live in the US with my beautiful family and I work part 
-                time as a dog walker. Welcome to my blog, where you'll be able to read all of my articles
-            and even buy some of my photographs. </p>
+            <p>Hi! My name is Lucía, I live in the Northern US with my beautiful family and I work part 
+                time as a dog walker and a gardener. Welcome to my blog, where you'll be able to read all of my articles
+            and even buy some of my photographs. </p><br>
+            <p id="click-here"><a href=""><strong>Click here to learn more.</strong></a></p>
         </div>
         
         <div class="content-button">
+            <div class="overlay">
             <figure>
                 <img src="resources/blog.png" alt='blog-icon' class='content-img'  id='blog'>
             </figure>
             <h2>Blog</h2>
+            </div>
         </div>
 
 
         <div class="content-button">
+            <div class="overlay">
             <figure>
                 <img src="resources/social-network.png" alt='blog-icon' class='content-img'  id='community'>
             </figure>
             <h2>Community Board</h2>
+            </div>
         </div>
 
         <div class="content-button">
+            <div class="overlay">
             <figure>
                 <img src="resources/communicate.png" alt='contact-logo' class='content-img'  id='contact'>
             </figure>
             <h2>Contact Me</h2>
+            </div>
         </div>
 
     </section>

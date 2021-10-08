@@ -20,39 +20,51 @@ body {
 header {
     position: relative;
     top: 0;
-    z-index: 11;
+    height: 23em;
     width: 100%;
     margin: 0 auto;
-    background: rgb(190, 199, 251);
-    background: linear-gradient(45deg, rgba(204, 220, 236, 0.726) 0%, rgba(169,222,249,1) 47%, rgba(228, 193, 249, 0.52) 70%);
+    /* background: rgb(190, 199, 251);
+    background: linear-gradient(45deg, rgba(204, 220, 236, 0.726) 0%, rgba(169,222,249,1) 47%, rgba(228, 193, 249, 0.52) 70%); */
     box-shadow: 3px 1px 10px lightgray;
     padding: .55em 0;
+    color: white;
+    background-image: url('resources/Pics/leaves.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    display: block;
+    width: 9em;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 55px;
+}
+
+.main-title {
+  margin-top: 0/5em;
+  color: white;
+  font-size: 250%;
+  margin-bottom: 0em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h4 {
   margin-top: 0.35em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* #menu {
-    position: relative;
-    z-index: 15;
-    width: 3.5em;
-    max-width: 4.5em;
-    margin: 0.15em auto;
-    height: auto;
-    top: 2em;
-    right: 2em;
-    border-radius: 15%;
-} */
-
-#logo {
-    position: relative;
-    z-index: 15;
-    display: block;
-    width: 10.5em;
-    margin: 0 auto;
-    height: auto;
-    border-radius: 55px;
+.head-overlay {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 130%;
+  font-weight: bolder;
 }
 
 .dropdown {
@@ -70,6 +82,7 @@ h4 {
   border: 0px solid black;
   border-radius: 50%;
   box-shadow: 1px 1px 10px grey;
+  z-index: 101;
 }
 
 .dropdown-menu {
@@ -130,16 +143,9 @@ button:focus + .dropdown-menu {
 
 button:focus {
   opacity: 0;
+  pointer-events: none;
 }
 
-
-
-.main-title {
-    margin-top: 1em;
-    color: black;
-    font-size: 300%;
-    margin-bottom: 0em;
-}
 
 .content-button {
     position: relative;
@@ -152,9 +158,6 @@ button:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background: rgb(228,193,249);
-    background: linear-gradient(45deg, rgba(228,193,249,1) 0%, rgba(169,222,249,1) 47%, rgba(228, 193, 249, 0.561) 70%); */
-    /* padding: 0.25em 0; */
     z-index: 100;
     transition: opacity 450ms ease-in-out;
 }
@@ -171,13 +174,12 @@ button:focus {
   font-weight: bolder;
 }
 
-
 .content-text {
   position: absolute;
   line-height: 1.5em;
   font-size: 120%;
   margin: auto 40%;
-  margin-top: -14em;
+  margin-top: -18em;
   opacity: 0;
   transition: opacity 450ms ease-in-out;
 }
@@ -196,14 +198,6 @@ button:focus {
     max-width: 60%;
 }
 
-/* .content-button:hover { 
-    background: rgb(219, 156, 255);
-    background: linear-gradient(45deg, rgb(214, 155, 248) 0%, rgb(128, 207, 246) 47%, rgba(228, 193, 249, 0.678) 70%);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.589);
-    bottom: 1px;
-    left: 1px;
-} */
-
 footer {
     position: relative;
     bottom: 0;
@@ -211,8 +205,8 @@ footer {
     width: 100%;
     padding: 1em 0;
     border-top: 1px solid white;
-    box-shadow: 2px 2px 15px lightgray;
-    background-color: whitesmoke;
+    box-shadow: 2px 2px 15px rgb(136, 136, 136);
+    background-color: rgb(223, 223, 223)
 }
 
 form {
@@ -254,33 +248,70 @@ input[type=submit] {
   color: blue;
 }
 
+#click-here a {
+  text-decoration: underline;
+  color: black;
+}
+
+#click-here a:visited {
+  text-decoration: underline;
+  color: black;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 1600px) {
     .content-button {
         margin: 5.5em 35%;
-        height: auto;
         border-radius: 10px;
         box-shadow: 2px 2px 10px lightgray;
-        background: rgb(228,193,249);
-        background: linear-gradient(45deg, rgba(228,193,249,1) 0%, rgba(169,222,249,1) 47%, rgba(228, 193, 249, 0.561) 70%);
-        padding: 0.25em 0;
-        z-index: 100;
+        padding: 0;
     }
+
     h4 {
         font-size: 120%;
     }
-    
-
     .dropdown-menu {
       padding-left: 0;
+    }
+
+    .content-text {
+      font-size: 140%;
+      margin-top: -16em;
+      margin-left: 35%;
+      margin-right: 35%;
+    }
+
+    #click-here {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .dropdown-menu ul li {
+      font-size: 130%;
     }
 }
 
 @media only screen and (max-width: 940px) {
     .content-button {
-        margin: 5.5em 28%;
+        margin: 4.5em 25%;
+        padding: 0;
+        pointer-events: none;
         z-index: 9;
+    }
+
+    .content-text {
+      position: relative;
+      text-align: left;
+      opacity: 1;
+      margin-top: 0;
+      font-size: 140%;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    #click-here {
+      text-align: center;
     }
 
     .dropdown-menu ul li {
@@ -301,9 +332,21 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 480px) {
+
     .content-button {
         margin: 4em 13%;
     }
+
+    .content-text {
+      position: relative;
+      text-align: left;
+      opacity: 1;
+      margin-top: 0;
+      font-size: 140%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
     .main-title {
         font-size: 225%;
     }
@@ -311,8 +354,8 @@ input[type=submit] {
     .dropdown {
       top: 1.5em;
       right: 1.5em;
-      width: 2.5em;
-      height: 2.5em;
+      width: 3em;
+      height: 3em;
   }
 
     form {
@@ -321,6 +364,7 @@ input[type=submit] {
 
     .dropdown-menu {
       width: 90%;
+      right: 1em;
       background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%);
       line-height: 1.25em;
       border-radius: 15px;
@@ -328,25 +372,40 @@ input[type=submit] {
 
     .dropdown-menu ul li {
       text-align: center;
-      font-size: 150%;
+      font-size: 140%;
     }
 }
 
 
 @media only screen and (max-width: 320px) {
+    
+    #logo {
+      width: 7em;
+  }
+
+    header {
+      height: 21em;
+    }
+
     .content-button {
-        margin: 3.5em 10%;
+        margin: 2.5em 10%;
+        height: 13em;
     }
     .main-title {
         font-size: 180%;
         margin-bottom: .25em;
     }
     .dropdown {
-        top: 1.5em;
-        right: 1.5em;
+        top: 1.15em;
+        right: 1.15em;
         width: 2em;
         height: 2em;
     }
+
+    #close {
+      width: 1em;
+      height: 1em;
+  }
 
     h4{
         margin-top: 0;
@@ -361,11 +420,10 @@ input[type=submit] {
 
     .dropdown-menu ul li {
       text-align: center;
-      font-size: 130%;
+      margin: 0.75em auto;
+      font-size: 110%;
     }
 }
-
-
 
 
 

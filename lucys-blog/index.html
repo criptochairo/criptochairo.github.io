@@ -24,43 +24,44 @@
 
 <body>
 
-    <div id="particle-container">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
+    <div id="particle-container" preload>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
+        <div class="particle"><img src="resources/leaf2.png" alt="" id="leaf2" /></div>
+        <div class="particle"><img src="resources/leaf2.png" alt="" id="leaf2" /></div>
+        <div class="particle"><img src="resources/leaf2.png" alt="" id="leaf2" /></div>
+        <div class="particle"><img src="resources/leaf2.png" alt="" id="leaf2" /></div>
+        <div class="particle"><img src="resources/leaf3.png" alt="" id="leaf3" /></div>
+        <div class="particle"><img src="resources/leaf3.png" alt="" id="leaf3" /></div>
+        <div class="particle"><img src="resources/leaf3.png" alt="" id="leaf3" /></div>
+        <div class="particle"><img src="resources/leaf3.png" alt="" id="leaf3" /></div>
+        <div class="particle"><img src="resources/leaf3.png" alt="" id="leaf3" /></div>
+        <div class="particle"><img src="resources/leaf4.png" alt="" id="leaf4" /></div>
+        <div class="particle"><img src="resources/leaf4.png" alt="" id="leaf4" /></div>
+        <div class="particle"><img src="resources/leaf4.png" alt="" id="leaf4" /></div>
+        <div class="particle"><img src="resources/leaf4.png" alt="" id="leaf4" /></div>
+        <div class="particle"><img src="resources/leaf4.png" alt="" id="leaf4" /></div>
+        <div class="particle"><img src="resources/leaf4.png" alt="" id="leaf4" /></div>
+        <div class="particle"><img src="resources/leaf4.png" alt="" id="leaf4" /></div>
+        <div class="particle"><img src="resources/leaf5.png" alt="" id="leaf5" /></div>
+        <div class="particle"><img src="resources/leaf5.png" alt="" id="leaf5" /></div>
+        <div class="particle"><img src="resources/leaf5.png" alt="" id="leaf5" /></div>
+        <div class="particle"><img src="resources/leaf5.png" alt="" id="leaf5" /></div>
+        <div class="particle"><img src="resources/leaf5.png" alt="" id="leaf5" /></div>
     </div>
 
-    <header>
+    <header preload>
+
     <div class="head-overlay">
         <div defer>
-            <button class='dropdown'></button>
+            <button class='dropdown'>Menu</button>
             <div class="dropdown-menu">
                 <ul>
                     <li><a href="">Home</a></li>
@@ -98,48 +99,63 @@
         whole button and put the background image there, then a div for the overlay, which includes text,
         logos and other images -->
 
-        <div class="content-button">
-            <div class="overlay">
-                <figure>
+        <div class="content-button" id="about-me" href="">
+            <div class="overlay" href="">
+                <!-- <figure>
                     <img src="resources/working-mother.png" alt='working-mother' class='content-img'  id='mother'>
-                </figure>
-                <h2>About me</h2>
+                </figure> -->
+                <h2 class="content-title" href="">About me</h2>
             </div>
         </div>
 
         <div class="content-text">
             <p>Hi! My name is Lucía, I live in the Northern US with my beautiful family and I work part 
                 time as a dog walker and a gardener. Welcome to my blog, where you'll be able to read all of my articles
-            and even buy some of my photographs. </p><br>
-            <p id="click-here"><a href=""><strong>Click here to learn more.</strong></a></p>
+            and even buy some of my photographs.</p><br>
+            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
         </div>
         
-        <div class="content-button">
+        <div class="content-button" id="blog">
             <div class="overlay">
-            <figure>
+            <!-- <figure>
                 <img src="resources/blog.png" alt='blog-icon' class='content-img'  id='blog'>
-            </figure>
-            <h2>Blog</h2>
+            </figure> -->
+            <h2 class="content-title">Blog</h2>
             </div>
         </div>
 
+        <div class="content-text">
+            <p>Placeholder text</p><br>
+            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
+        </div>
 
-        <div class="content-button">
+
+        <div class="content-button" id="community-board">
             <div class="overlay">
-            <figure>
+            <!-- <figure>
                 <img src="resources/social-network.png" alt='blog-icon' class='content-img'  id='community'>
-            </figure>
-            <h2>Community Board</h2>
+            </figure> -->
+            <h2 class="content-title">Community Board</h2>
             </div>
         </div>
 
-        <div class="content-button">
+        <div class="content-text">
+            <p>Placeholder text</p><br>
+            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
+        </div>
+
+        <div class="content-button" id="contact-me">
             <div class="overlay">
-            <figure>
+            <!-- <figure>
                 <img src="resources/communicate.png" alt='contact-logo' class='content-img'  id='contact'>
-            </figure>
-            <h2>Contact Me</h2>
+            </figure> -->
+            <h2 class="content-title">Contact Me</h2>
             </div>
+        </div>
+
+        <div class="content-text">
+            <p>Placeholder text</p><br>
+            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
         </div>
 
     </section>

@@ -23,8 +23,6 @@ header {
     height: 23em;
     width: 100%;
     margin: 0 auto;
-    /* background: rgb(190, 199, 251);
-    background: linear-gradient(45deg, rgba(204, 220, 236, 0.726) 0%, rgba(169,222,249,1) 47%, rgba(228, 193, 249, 0.52) 70%); */
     box-shadow: 3px 1px 10px lightgray;
     padding: .55em 0;
     color: white;
@@ -55,6 +53,11 @@ h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+p {
+  font-family: sans-serif;
+  font-size: 125%;
+}
+
 .head-overlay {
   position: absolute;
   top: 0;
@@ -71,7 +74,7 @@ h4 {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
-  background-image: url('resources/menu2.png');
+  background-image: url('resources/pumpkin.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,8 +84,10 @@ h4 {
   padding: 0.5em;
   border: 0px solid black;
   border-radius: 50%;
-  box-shadow: 1px 1px 10px grey;
   z-index: 101;
+  color: white;
+  font-size: 80%;
+  font-weight: bold;
 }
 
 .dropdown-menu {
@@ -90,8 +95,8 @@ h4 {
   right: 1.5em;
   top: 1.5em;
   line-height: 1.5em;
-  background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgb(255, 193, 222) 47%, rgba(208,244,222,0.75) 70%);
-  box-shadow: 2px 2px 15px lightgray;
+  background: linear-gradient(45deg, rgb(100, 67, 50) 0%, rgb(231, 161, 70) 47%, rgba(190, 82, 19, 0.685) 70%);
+  box-shadow: 2px 2px 15px rgb(194, 92, 24);
   border-radius: 15px 0px 15px 15px;
   padding: .5em;
   opacity: 0;
@@ -150,16 +155,41 @@ button:focus {
 .content-button {
     position: relative;
     display: block;
-    margin: 5.5em 40%;
+    margin: 6em 37.5%;
     height: 17em;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 2px 2px 10px lightgray;
-    background-image: url(./resources/Pics/ROCKS.JPEG);
+    z-index: 100;
+    pointer-events: all;
+    /* transition: opacity 450ms ease-in-out; */
+}
+
+#about-me {
+    background-image: url(./resources/Pics/175.JPEG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 100;
-    transition: opacity 450ms ease-in-out;
+}
+
+#blog {
+  background-image: url(./resources/Pics/136.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#community-board {
+  background-image: url(./resources/Pics/166.JPEG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact-me {
+  background-image: url(./resources/Pics/54.JPEG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .overlay {
@@ -168,35 +198,37 @@ button:focus {
   color: white;
   height: 100%;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   z-index: 101;
   font-size: 130%;
   font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200%;
+  pointer-events: all;
 }
+
+/* .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  pointer-events: all;
+} */
 
 .content-text {
-  position: absolute;
+  position: relative;
   line-height: 1.5em;
   font-size: 120%;
-  margin: auto 40%;
-  margin-top: -18em;
-  opacity: 0;
-  transition: opacity 450ms ease-in-out;
-}
-
-.content-button:hover + .content-text {
+  margin: -1em 30%;
   opacity: 1;
 }
 
-.content-button:hover{
-  opacity: 0;
-}
 
 .content-img {
     width: 8em;
     height: auto;
     max-width: 60%;
 }
+
 
 footer {
     position: relative;
@@ -206,7 +238,8 @@ footer {
     padding: 1em 0;
     border-top: 1px solid white;
     box-shadow: 2px 2px 15px rgb(136, 136, 136);
-    background-color: rgb(223, 223, 223)
+    background-color: rgb(223, 223, 223);
+    margin-top: 9em;
 }
 
 form {
@@ -277,7 +310,6 @@ input[type=submit] {
 
     .content-text {
       font-size: 140%;
-      margin-top: -16em;
       margin-left: 35%;
       margin-right: 35%;
     }
@@ -320,7 +352,9 @@ input[type=submit] {
 
     .dropdown-menu {
       padding: 0;
-      background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,0.75) 70%);
+      /* background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,0.75) 70%); */
+      background: linear-gradient(45deg, rgb(100, 67, 50) 0%, rgb(231, 161, 70) 47%, rgba(190, 82, 19, 0.685) 70%);
+      box-shadow: 2px 2px 15px rgb(194, 92, 24);
       line-height: 1.75em;
       z-index: 10;
       box-shadow: 2px 2px 15px #888888;
@@ -365,7 +399,9 @@ input[type=submit] {
     .dropdown-menu {
       width: 90%;
       right: 1em;
-      background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%);
+      background: linear-gradient(45deg, rgb(100, 67, 50) 0%, rgb(231, 161, 70) 47%, rgba(190, 82, 19, 0.685) 70%);
+      box-shadow: 2px 2px 15px rgb(194, 92, 24);
+      /* background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%); */
       line-height: 1.25em;
       border-radius: 15px;
     }
@@ -413,7 +449,9 @@ input[type=submit] {
     
     .dropdown-menu {
       width: 85%;
-      background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%);
+      background: linear-gradient(45deg, rgb(100, 67, 50) 0%, rgb(231, 161, 70) 47%, rgba(190, 82, 19, 0.685) 70%);
+      box-shadow: 2px 2px 15px rgb(194, 92, 24);
+      /* background: linear-gradient(45deg, rgba(208,244,222,1) 0%, rgba(255,153,200,1) 47%, rgba(208,244,222,1) 70%); */
       line-height: 1.10em;
       border-radius: 15px;
     }
@@ -431,6 +469,30 @@ input[type=submit] {
 
 /* Animated particle background */
 
+#leaf1 {
+  width: 550%;
+  height: auto;
+}
+
+#leaf2 {
+  width: 650%;
+  height: auto;
+}
+
+#leaf3 {
+  width: 450%;
+  height: auto;
+}
+
+#leaf4 {
+  width: 650%;
+  height: auto;
+}
+
+#leaf5 {
+  width: 450%;
+  height: auto;
+}
 
 @-webkit-keyframes particle-animation-1 {
     100% {
@@ -455,7 +517,7 @@ input[type=submit] {
             animation-delay: -0.2s;
     -webkit-transform: translate3d(13vw, 35vh, 72px);
             transform: translate3d(13vw, 35vh, 72px);
-    background: #26d985;
+    /* background: #26d985; */
   }
   
   @-webkit-keyframes particle-animation-2 {
@@ -481,7 +543,7 @@ input[type=submit] {
             animation-delay: -0.4s;
     -webkit-transform: translate3d(77vw, 70vh, 76px);
             transform: translate3d(77vw, 70vh, 76px);
-    background: #56d926;
+    /* background: #56d926; */
   }
   
   @-webkit-keyframes particle-animation-3 {
@@ -507,7 +569,7 @@ input[type=submit] {
             animation-delay: -0.6s;
     -webkit-transform: translate3d(16vw, 65vh, 8px);
             transform: translate3d(16vw, 65vh, 8px);
-    background: #d9ca26;
+    /* background: #d9ca26; */
   }
   
   @-webkit-keyframes particle-animation-4 {
@@ -533,7 +595,7 @@ input[type=submit] {
             animation-delay: -0.8s;
     -webkit-transform: translate3d(19vw, 86vh, 13px);
             transform: translate3d(19vw, 86vh, 13px);
-    background: #26d9cd;
+    /* background: #26d9cd; */
   }
   
   @-webkit-keyframes particle-animation-5 {
@@ -559,7 +621,7 @@ input[type=submit] {
             animation-delay: -1s;
     -webkit-transform: translate3d(51vw, 29vh, 69px);
             transform: translate3d(51vw, 29vh, 69px);
-    background: #c426d9;
+    /* background: #c426d9; */
   }
   
   @-webkit-keyframes particle-animation-6 {
@@ -585,7 +647,7 @@ input[type=submit] {
             animation-delay: -1.2s;
     -webkit-transform: translate3d(40vw, 9vh, 82px);
             transform: translate3d(40vw, 9vh, 82px);
-    background: #d926d3;
+    /* background: #d926d3; */
   }
   
   @-webkit-keyframes particle-animation-7 {
@@ -611,7 +673,7 @@ input[type=submit] {
             animation-delay: -1.4s;
     -webkit-transform: translate3d(85vw, 29vh, 13px);
             transform: translate3d(85vw, 29vh, 13px);
-    background: #26d9ac;
+    /* background: #26d9ac; */
   }
   
   @-webkit-keyframes particle-animation-8 {
@@ -637,7 +699,7 @@ input[type=submit] {
             animation-delay: -1.6s;
     -webkit-transform: translate3d(56vw, 59vh, 54px);
             transform: translate3d(56vw, 59vh, 54px);
-    background: #6bd926;
+    /* background: #6bd926; */
   }
   
   @-webkit-keyframes particle-animation-9 {
@@ -663,7 +725,7 @@ input[type=submit] {
             animation-delay: -1.8s;
     -webkit-transform: translate3d(21vw, 20vh, 35px);
             transform: translate3d(21vw, 20vh, 35px);
-    background: #acd926;
+    /* background: #acd926; */
   }
   
   @-webkit-keyframes particle-animation-10 {
@@ -689,7 +751,7 @@ input[type=submit] {
             animation-delay: -2s;
     -webkit-transform: translate3d(89vw, 44vh, 43px);
             transform: translate3d(89vw, 44vh, 43px);
-    background: #26d9b2;
+    /* background: #26d9b2; */
   }
   
   @-webkit-keyframes particle-animation-11 {
@@ -715,7 +777,7 @@ input[type=submit] {
             animation-delay: -2.2s;
     -webkit-transform: translate3d(24vw, 82vh, 74px);
             transform: translate3d(24vw, 82vh, 74px);
-    background: #26d96b;
+    /* background: #26d96b; */
   }
   
   @-webkit-keyframes particle-animation-12 {
@@ -741,7 +803,7 @@ input[type=submit] {
             animation-delay: -2.4s;
     -webkit-transform: translate3d(70vw, 16vh, 42px);
             transform: translate3d(70vw, 16vh, 42px);
-    background: #2671d9;
+    /* background: #2671d9; */
   }
   
   @-webkit-keyframes particle-animation-13 {
@@ -767,7 +829,7 @@ input[type=submit] {
             animation-delay: -2.6s;
     -webkit-transform: translate3d(12vw, 54vh, 47px);
             transform: translate3d(12vw, 54vh, 47px);
-    background: #26d92c;
+    /* background: #26d92c; */
   }
   
   @-webkit-keyframes particle-animation-14 {
@@ -793,7 +855,7 @@ input[type=submit] {
             animation-delay: -2.8s;
     -webkit-transform: translate3d(64vw, 31vh, 13px);
             transform: translate3d(64vw, 31vh, 13px);
-    background: #fcf6bd;
+    /* background: #fcf6bd; */
   }
   
   @-webkit-keyframes particle-animation-15 {
@@ -819,7 +881,7 @@ input[type=submit] {
             animation-delay: -3s;
     -webkit-transform: translate3d(58vw, 20vh, 74px);
             transform: translate3d(58vw, 20vh, 74px);
-    background: #26d932;
+    /* background: #26d932; */
   }
   
   @-webkit-keyframes particle-animation-16 {
@@ -845,7 +907,7 @@ input[type=submit] {
             animation-delay: -3.2s;
     -webkit-transform: translate3d(42vw, 20vh, 10px);
             transform: translate3d(42vw, 20vh, 10px);
-    background: #26d985;
+    /* background: #26d985; */
   }
   
   @-webkit-keyframes particle-animation-17 {
@@ -871,7 +933,7 @@ input[type=submit] {
             animation-delay: -3.4s;
     -webkit-transform: translate3d(68vw, 32vh, 35px);
             transform: translate3d(68vw, 32vh, 35px);
-    background: #d926b2;
+    /* background: #d926b2; */
   }
   
   @-webkit-keyframes particle-animation-18 {
@@ -897,7 +959,7 @@ input[type=submit] {
             animation-delay: -3.6s;
     -webkit-transform: translate3d(5vw, 26vh, 7px);
             transform: translate3d(5vw, 26vh, 7px);
-    background: #26d994;
+    /* background: #26d994; */
   }
   
   @-webkit-keyframes particle-animation-19 {
@@ -923,7 +985,7 @@ input[type=submit] {
             animation-delay: -3.8s;
     -webkit-transform: translate3d(72vw, 23vh, 17px);
             transform: translate3d(72vw, 23vh, 17px);
-    background: #a626d9;
+    /* background: #a626d9; */
   }
   
   @-webkit-keyframes particle-animation-20 {
@@ -949,7 +1011,7 @@ input[type=submit] {
             animation-delay: -4s;
     -webkit-transform: translate3d(17vw, 64vh, 66px);
             transform: translate3d(17vw, 64vh, 66px);
-    background: #6bd926;
+    /* background: #6bd926; */
   }
   
   @-webkit-keyframes particle-animation-21 {
@@ -975,7 +1037,7 @@ input[type=submit] {
             animation-delay: -4.2s;
     -webkit-transform: translate3d(69vw, 88vh, 86px);
             transform: translate3d(69vw, 88vh, 86px);
-    background: #3b26d9;
+    /* background: #3b26d9; */
   }
   
   @-webkit-keyframes particle-animation-22 {
@@ -1001,7 +1063,7 @@ input[type=submit] {
             animation-delay: -4.4s;
     -webkit-transform: translate3d(34vw, 40vh, 100px);
             transform: translate3d(34vw, 40vh, 100px);
-    background: #26d959;
+    /* background: #26d959; */
   }
   
   @-webkit-keyframes particle-animation-23 {
@@ -1027,7 +1089,7 @@ input[type=submit] {
             animation-delay: -4.6s;
     -webkit-transform: translate3d(39vw, 6vh, 48px);
             transform: translate3d(39vw, 6vh, 48px);
-    background: #a626d9;
+    /* background: #a626d9; */
   }
   
   @-webkit-keyframes particle-animation-24 {
@@ -1053,7 +1115,7 @@ input[type=submit] {
             animation-delay: -4.8s;
     -webkit-transform: translate3d(83vw, 9vh, 82px);
             transform: translate3d(83vw, 9vh, 82px);
-    background: #d9cd26;
+    /* background: #d9cd26; */
   }
   
   @-webkit-keyframes particle-animation-25 {
@@ -1079,7 +1141,7 @@ input[type=submit] {
             animation-delay: -5s;
     -webkit-transform: translate3d(2vw, 57vh, 1px);
             transform: translate3d(2vw, 57vh, 1px);
-    background: #2647d9;
+    /* background: #2647d9; */
   }
   
   @-webkit-keyframes particle-animation-26 {
@@ -1105,7 +1167,7 @@ input[type=submit] {
             animation-delay: -5.2s;
     -webkit-transform: translate3d(11vw, 77vh, 8px);
             transform: translate3d(11vw, 77vh, 8px);
-    background: #77d926;
+    /* background: #77d926; */
   }
   
   @-webkit-keyframes particle-animation-27 {
@@ -1131,7 +1193,7 @@ input[type=submit] {
             animation-delay: -5.4s;
     -webkit-transform: translate3d(73vw, 1vh, 17px);
             transform: translate3d(73vw, 1vh, 17px);
-    background: #a0d926;
+    /* background: #a0d926; */
   }
   
   @-webkit-keyframes particle-animation-28 {
@@ -1157,7 +1219,7 @@ input[type=submit] {
             animation-delay: -5.6s;
     -webkit-transform: translate3d(24vw, 84vh, 24px);
             transform: translate3d(24vw, 84vh, 24px);
-    background: #d92682;
+    /* background: #d92682; */
   }
   
   @-webkit-keyframes particle-animation-29 {
@@ -1183,7 +1245,7 @@ input[type=submit] {
             animation-delay: -5.8s;
     -webkit-transform: translate3d(60vw, 34vh, 32px);
             transform: translate3d(60vw, 34vh, 32px);
-    background: #26d9af;
+    /* background: #26d9af; */
   }
   
   @-webkit-keyframes particle-animation-30 {
@@ -1209,5 +1271,5 @@ input[type=submit] {
             animation-delay: -6s;
     -webkit-transform: translate3d(35vw, 60vh, 42px);
             transform: translate3d(35vw, 60vh, 42px);
-    background: #2647d9;
+    /* background: #2647d9; */
   }

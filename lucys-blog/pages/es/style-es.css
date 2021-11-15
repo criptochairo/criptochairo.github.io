@@ -26,7 +26,7 @@ header {
     box-shadow: 3px 1px 10px lightgray;
     padding: .55em 0;
     color: white;
-    background-image: url('resources/Pics/leaves.JPG');
+    background-image: url('../../resources/Pics/leaves.JPG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +82,7 @@ p {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
-  background-image: url('resources/pumpkin.png');
+  background-image: url('../../resources/pumpkin.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,28 +184,28 @@ button:focus {
 }
 
 #about-me {
-    background-image: url(./resources/Pics/210.JPEG);
+    background-image: url(../../resources/Pics/210.JPEG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #blog {
-  background-image: url(./resources/Pics/136.JPG);
+  background-image: url(../../resources/Pics/136.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #community-board {
-  background-image: url(./resources/Pics/166.JPEG);
+  background-image: url(../../resources/Pics/166.JPEG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #contact-me {
-  background-image: url(./resources/Pics/54.JPEG);
+  background-image: url(../../resources/Pics/54.JPEG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

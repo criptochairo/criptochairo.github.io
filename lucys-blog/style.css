@@ -135,6 +135,7 @@ ul li a:visited {
 
 ul li a:hover {
   text-decoration: underline;
+  pointer-events: all;
 } 
 
 button:focus + .dropdown-menu {
@@ -145,15 +146,13 @@ button:focus + .dropdown-menu {
 
 button:focus {
   opacity: 0;
+  pointer-events: none;
 }
 
 .content-container {
   border: 1px solid black;
   border-radius: 20px;
   margin: 10em 30%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .content-button {

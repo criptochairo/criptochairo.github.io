@@ -20,9 +20,9 @@
     <title>What if I say yes?</title>
 </head>
 
-<!-- <body onload="document.body.style.opacity='1'"> -->
+<body onload="document.body.style.opacity='1'">
 
-<body>
+
 
     <div id="particle-container" preload>
         <div class="particle"><img src="resources/leaf1.png" alt="" id="leaf1" /></div>
@@ -64,18 +64,18 @@
             <button class='dropdown'>Menu</button>
             <div class="dropdown-menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/about-me/about-me.html">About Me</a></li>
+                    <li><a href="./pages/blog/blog.html">Blog</a></li>
                     <li><a href="">Moment of the Week</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./pages/contact-me/contact-me.html">Contact</a></li>
                     <li><a href="">My Photos</a></li>
                     <li><a href="">My Podcast</a></li>
                     <li><a href="">Book With my Twin Brother</a></li>
                     <li><a href="">Creating with my Daughter</a></li>
                     <li><a href="">Dear Rocy</a></li>
                     <li><a href="">Abuelita Recommends</a></li>
-                    <li><a href="">Community Board</a></li>
+                    <li><a href="./pages/community-board/community.html">Community Board</a></li>
                 </ul>
                 <img src="resources/close.png" alt="close signal" id='close'>
             </div>
@@ -84,7 +84,7 @@
         
 
         <figure>
-            <img src="resources/logo2.jpeg" alt='Logo provisional' id='logo'>
+            <img src="resources/logoprov3.jpeg" alt='Logo provisional' id='logo'>
         </figure>
         
         <h1 class="main-title"><strong>What if I Say Yes?</strong></h1>
@@ -99,77 +99,68 @@
         whole button and put the background image there, then a div for the overlay, which includes text,
         logos and other images -->
 
-        <div class="content-button" id="about-me" href="">
-            <div class="overlay" href="">
-                <!-- <figure>
-                    <img src="resources/working-mother.png" alt='working-mother' class='content-img'  id='mother'>
-                </figure> -->
-                <h2 class="content-title" href="">About me</h2>
-            </div>
-        </div>
-
-        <div class="content-text">
-            <p>Hi! My name is Lucía, I live in the Northern US with my beautiful family and I work part 
-                time as a dog walker and a gardener. Welcome to my blog, where you'll be able to read all of my articles
-            and even buy some of my photographs.</p><br>
-            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
-        </div>
+    <div class="content-container">
         
-        <div class="content-button" id="blog">
-            <div class="overlay">
-            <!-- <figure>
-                <img src="resources/blog.png" alt='blog-icon' class='content-img'  id='blog'>
-            </figure> -->
-            <h2 class="content-title">Blog</h2>
-            </div>
-        </div>
+        <a href="./pages/about-me/about-me.html"><div class="content-button" id="about-me">
+        </div></a>
 
         <div class="content-text">
-            <p>Placeholder text</p><br>
-            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
+            <h2 class="content-title"><a href="./pages/about-me/about-me.html">About me</a></h2>
+            <p>Hello! My name is Lucía Cárdenas and I invite you to join me in exploring the different ways in which your life can change for the better if you decide to say YES! to the many opportunities that life presents to you.</p>
         </div>
 
+    </div>
 
-        <div class="content-button" id="community-board">
-            <div class="overlay">
-            <!-- <figure>
-                <img src="resources/social-network.png" alt='blog-icon' class='content-img'  id='community'>
-            </figure> -->
-            <h2 class="content-title">Community Board</h2>
-            </div>
-        </div>
+    <div class="content-container">
+        
+        <a href=""><div class="content-button" id="blog">
+        </div></a>
 
         <div class="content-text">
-            <p>Placeholder text</p><br>
-            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
+            <h2 class="content-title"><a href="">Blog</a></h2>
+            <p>Here you will see how I have said yes! to life. Come in, read and get inspired to start doing your thing.</p>
         </div>
+    
+    </div>
 
-        <div class="content-button" id="contact-me">
-            <div class="overlay">
-            <!-- <figure>
-                <img src="resources/communicate.png" alt='contact-logo' class='content-img'  id='contact'>
-            </figure> -->
-            <h2 class="content-title">Contact Me</h2>
-            </div>
-        </div>
+
+    
+    <div class="content-container">
+
+        <a href=""><div class="content-button" id="community-board">
+        </div></a>
 
         <div class="content-text">
-            <p>Placeholder text</p><br>
-            <p id="click-here"><a href="./pages/about-me/about-me.html"><strong>Click here to learn more.</strong></a></p>
+            <h2 class="content-title"><a href="">Community Board</a></h2>
+            <p>This is a space to learn from others and for others to learn from you. Come in and share your experiences!</p>
         </div>
+
+    </div>
+
+    <div class="content-container">
+
+        <a href=""><div class="content-button" id="contact-me">
+        </div></a>
+
+        <div class="content-text">
+            <h2 class="content-title"><a href="">Contact me</a></h2>
+            <p>I'm all ears. Send me your doubts, questions and / or comments.</p>
+        </div>
+
+    </div>
 
     </section>
 
     <footer>
         
         <form action="community.html" method="GET">
-            <label for="firstname"><h3>Want to be part of the "What if I Say Yes" community?</h3></label>
+            <label for="firstname"><h3>Subscribe to receive my weekly email newsletter. <br> It will get you inspired to try new things by allowing yourself to say YES!</h3></label>
             <input id='firstname' type="text" name='firstname' placeholder="First name" required><br>
             <input id='email' type="email" name='email' placeholder="e-mail" required><br>
             <input type="submit" value="Subscribe!">
         </form>
 
-        <div id='credit'><small>Website by <a href="https://github.com/criptochairo" title="Criptochairo" target="_blank">Criptochairo</a><br>Icons made by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>
+        <div id='credit'><small>Website by <a href="https://github.com/criptochairo" title="Criptochairo">Criptochairo</a><br>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
         <br>Animated background by Envato Tuts+</small></div>
 
     </footer>

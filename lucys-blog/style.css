@@ -11,16 +11,16 @@ body {
     transition: opacity 2s;
 }
 
-.particle {
+/* .particle {
 	position: absolute;
  	border-radius: 50%;
   z-index: 15;
-}
+} */
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
-    height: 24em;
+    height: 12em;
     width: 100%;
     margin: 0 auto;
     box-shadow: 3px 1px 10px lightgray;
@@ -30,6 +30,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 105;
 }
 
 .langs a {
@@ -41,19 +42,25 @@ header {
 }
 
 #logo {
-    display: block;
-    width: 9em;
-    height: 9em;
+    position: absolute;
+    left: 20px;
+    width: 7em;
+    height: 7em;
     margin: 0 auto;
     border-radius: 55px;
 }
 
 .main-title {
-  margin-top: 0/5em;
+  margin-top: 0.65em;
   color: white;
   font-size: 250%;
   margin-bottom: 0em;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-title a{
+  color: white;
+  text-decoration: none;
 }
 
 h4 {
@@ -78,51 +85,29 @@ p {
   font-weight: bolder;
 }
 
-.dropdown {
-  position: absolute;
-  top: 1.5em;
-  right: 1.5em;
-  background-image: url('resources/pumpkin.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0);
-  width: 3.5em;
-  height: 3.5em;
-  padding: 0.5em;
-  border: 0px solid black;
-  border-radius: 50%;
-  z-index: 101;
-  color: white;
-  font-size: 80%;
-  font-weight: bold;
-}
-
 .dropdown-menu {
   position: absolute;
-  right: 1.5em;
-  top: 1.5em;
-  line-height: 1.5em;
-  background: linear-gradient(45deg, rgb(100, 67, 50) 0%, rgb(231, 161, 70) 47%, rgba(190, 82, 19, 0.685) 70%);
-  box-shadow: 2px 2px 15px rgb(194, 92, 24);
-  border-radius: 15px 0px 15px 15px;
-  padding: .5em;
-  opacity: 0;
-  transition: opacity 450ms ease-in-out, transform 450ms ease-in-out;
-  transform: translateY(-450px);
-  pointer-events: all;
+  top: 5em;
+  right: 3em;
 }
 
-#close {
-  position: absolute;
-  width: 1.5em;
-  height: 1.5em;
-  top: 1em;
-  right: 1em;
-  opacity: 0.8;
+.dropdown-menu ul li {
+  display: inline-block;
+  width: 8em;
+  height: auto;
+  /* border: 1px solid white; */
 }
 
-ul li {
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ul li {
   display: block;
   margin: 1em;
   font-size: 160%;
@@ -155,12 +140,17 @@ button:focus + .dropdown-menu {
 button:focus {
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 .content-container {
   border: 1px solid black;
   border-radius: 20px;
-  margin: 10em 30%;
+  margin: 10% 30%;
+  position: relative;
+}
+
+#about-me-container {
+  margin-top: 18em;
 }
 
 .content-button {
@@ -198,7 +188,7 @@ button:focus {
 }
 
 #community-board {
-  background-image: url(./resources/Pics/166.JPEG);
+  background-image: url(./resources/Pics/95.JPEG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,11 +211,19 @@ button:focus {
   opacity: 1;
 }
 
+.content-text p {
+  font-family: 'Montagu Slab', serif;
+} 
+
+.content-text h2 {
+  font-size: 200%;
+}
+
 
 .content-img {
     width: 8em;
     height: auto;
-    max-width: 60%;
+    /* max-width: 60%; */
 }
 
 
@@ -302,9 +300,9 @@ input[type=submit] {
     }
 
     .content-text {
-      font-size: 140%;
-      margin-left: 35%;
-      margin-right: 35%;
+      font-size: 130%;
+      margin-left: 8%;
+      margin-right: 8%;
     }
 
     #click-here {
@@ -432,9 +430,14 @@ input[type=submit] {
     }
     .dropdown {
         top: 1.15em;
-        right: 1.15em;
+        right: 2.2em;
         width: 2em;
         height: 2em;
+        font-size: .65em;
+    }
+
+    .content-text p {
+      font-size: 0.85em;
     }
 
     #close {
@@ -452,11 +455,8 @@ input[type=submit] {
       margin-bottom: 0;
     }
 
-    .dropdown {
-      font-size: .75em;
-    }
     
-    .dropdown-menu {
+    dropdown-menu {
       width: 85%;
       background: linear-gradient(45deg, rgb(100, 67, 50) 0%, rgb(231, 161, 70) 47%, rgba(190, 82, 19, 0.685) 70%);
       box-shadow: 2px 2px 15px rgb(194, 92, 24);

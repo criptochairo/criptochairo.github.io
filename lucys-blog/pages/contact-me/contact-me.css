@@ -53,6 +53,10 @@ p {
   font-size: 125%;  
 }
 
+a {
+  text-decoration: none;
+}
+
 .head-overlay {
   position: absolute;
   top: 0;
